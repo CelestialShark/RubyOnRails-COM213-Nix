@@ -13,16 +13,19 @@
             packages = with pkgs; [
                 ruby_4_0
                 ruby-lsp
+                nodejs_24
             ];
             shellHook = ''
                 export GEM_HOME=$PWD/.gem
                 export GEM_PATH=$PWD/.gem
                 export PATH=$GEM_HOME/bin:$PATH
 
-                echo "Ruby development shell"
+                echo "Ruby on Rails development shell"
                 echo ""
                 echo "Ruby Version:"
                 ruby -v
+                echo "NodeJS Version:"
+                node -v
                 echo ""
                 echo "Gems are installed in $GEM_HOME"
                 echo "Recommended to use direnv to ensure the same .gem folder is used every time for this project"

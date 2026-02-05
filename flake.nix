@@ -14,6 +14,8 @@
                 ruby_4_0
                 ruby-lsp
                 nodejs_24
+                yarn
+                postgresql
             ];
             shellHook = ''
                 export GEM_HOME=$PWD/.gem
@@ -26,6 +28,10 @@
                 ruby -v
                 echo "NodeJS Version:"
                 node -v
+                echo "Yarn Version:"
+                yarn -v
+                echo "Postgresql Version:"
+                postgres --version
                 echo ""
                 echo "Gems are installed in $GEM_HOME"
                 echo "Recommended to use direnv to ensure the same .gem folder is used every time for this project"

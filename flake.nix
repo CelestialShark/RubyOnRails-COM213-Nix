@@ -11,9 +11,9 @@
     in {
         devShells.${system}.default = pkgs.mkShell {
             packages = with pkgs; [
-                ruby_4_0
+                ruby_3_4
                 ruby-lsp
-                nodejs_24
+                nodejs_22
                 yarn
                 postgresql
             ];

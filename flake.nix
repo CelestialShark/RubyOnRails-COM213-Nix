@@ -16,6 +16,8 @@
                 nodejs_22
                 yarn
                 postgresql
+                libpq
+                libyaml
             ];
             shellHook = ''
                 export GEM_HOME=$PWD/.gem
